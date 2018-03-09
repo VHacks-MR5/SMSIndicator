@@ -7,14 +7,22 @@ msg = "hello, my name is Mustafa Jamal, mail and lives in Egypt"
 
 
 """
+Clear Punctuations
+@:param String
+@:return Clear string from punctuations
+"""
+def noPunctuations(txt):
+    return txt.translate(str.maketrans('','',string.punctuation))
+
+
+"""
 This Function to names the countries in the msg,
-removes punctuations from text msg
 @:param text string 
 @:return the name in the msg
 """
 def isName(txt):
     name = ""
-    clearTxt = txt.translate(str.maketrans('','',string.punctuation))
+    clearTxt = noPunctuations(txt)
     txtList = clearTxt.split()
     with open("countries") as f:
         countryList = f.read().splitlines()
@@ -23,7 +31,7 @@ def isName(txt):
             name += word + " "
     return "name: " + name
 
-# print(isName(msg))
+print(isName(msg))
 
 
 """
@@ -43,4 +51,4 @@ def isCountry(txt):
 
     return "Country: " + countryFound
 
-# print(isCountry(msg))
+print(isCountry(msg))
