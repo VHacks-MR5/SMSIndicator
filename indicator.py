@@ -23,7 +23,7 @@ def isName(txt):
     for word in txtList:
         if word[0].isupper() and word not in countryList:
             name += word + " "
-    return "name: " + name
+    return "Name: " + name
 
 
 """
