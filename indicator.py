@@ -1,10 +1,5 @@
 import string
 
-
-# text msg
-msg = "hello, my name is Mustafa Jamal, male and lives in @Egypt!!! 21 yrs"
-
-
 """
 Clear Punctuations
 @:param String
@@ -51,6 +46,7 @@ def isCountry(txt):
 
 
 """
+Returns the Gender if mentioned 
 @:param String
 @:return the Gender from the msg
 """
@@ -66,9 +62,17 @@ def gender(txt):
     return "Gender(s): " + genders
 
 
-
+"""
+Returns the Age number as a string from text msg
+@:param String
+@:return numbers in it as List 
+"""
 def age(txt):
     return "Age(s): " + str([int(s) for s in txt.split() if s.isdigit()])
+
+
+# text msg
+msg = "hello, my name is Mustafa Jamal, male and lives in @Egypt!!! 21 yrs"
 
 # functions Testing
 print(noPunctuations(msg))
