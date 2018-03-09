@@ -2,7 +2,7 @@ import string
 
 
 # text msg
-msg = "hello, my name is Mustafa Jamal, male and lives in @Egypt!!!"
+msg = "hello, my name is Mustafa Jamal, male and lives in @Egypt!!! 21 yrs"
 
 
 """
@@ -65,8 +65,14 @@ def gender(txt):
 
     return "Gender(s): " + genders
 
+
+
+def age(txt):
+    return "Age(s): " + str([int(s) for s in txt.split() if s.isdigit()])
+
 # functions Testing
 print(noPunctuations(msg))
 print(isName(msg))
 print(isCountry(msg))
 print(gender(msg))
+print(age(msg))
