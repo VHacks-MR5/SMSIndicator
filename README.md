@@ -23,4 +23,4 @@
 
 # Twilio
 
-> Works for receiving the msg then --pase-it-to &rarr; SMSIndicator.
+> Works for receiving the msg then --pass-it-to &rarr; SMSIndicator.
