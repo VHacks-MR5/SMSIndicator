@@ -5,7 +5,7 @@
 * Soon wnough it should detect:
     + [X] First Name
     + [X] Last Name
-    + Nickname..etc (what yu worte as names)
+    + [ ] Nickname..etc (what yu worte as names)
     + [X] Countries (aka locality we love techinical language here)
     + [X] Gender
     + [X] Age
