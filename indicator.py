@@ -70,7 +70,25 @@ else it won't return that
 @:return numbers in it as List 
 """
 def age(txt):
-    return "Age(s): " + str([int(s) for s in txt.split() if s.isdigit()])
+    numbersList = [int(s) for s in txt.split() if s.isdigit()]
+    for ele in numbersList:
+        if ele < 333:
+            return "Age: " + str(ele)
+    return "No Age In the Msg"
+
+
+"""
+Returns the phone number as a string from text msg
+else it won't return that
+@:param String
+@:return numbers in it as List 
+"""
+def phone(txt):
+    numbersList = [int(s) for s in txt.split() if s.isdigit()]
+    for ele in numbersList:
+        if ele > 999:
+            return "Phone no.: " + str(ele)
+    return "No Phone Number"
 
 
 # text msg
@@ -82,3 +100,4 @@ print(isName(msg))
 print(isCountry(msg))
 print(gender(msg))
 print(age(msg))
+print(phone(msg))

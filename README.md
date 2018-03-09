@@ -3,16 +3,16 @@
 > Indicates names, ages, gender, etc in SMS
 
 * Soon wnough it should detect:
-    + First Name
-    + Last Name
+    + [X] First Name
+    + [X] Last Name
     + Nickname..etc (what yu worte as names)
-    + Countries (aka locality we love techinical language here)
-    + Gender
-    + Age
-    + Locality
-    + nationality
-    + email
-    + phone
+    + [X] Countries (aka locality we love techinical language here)
+    + [X] Gender
+    + [X] Age
+    + [ ] Locality
+    + [ ] nationality
+    + [ ] email
+    + [X] phone
 
 * Indicators with some working funcitonality:
 	/Feel in some whatever works to some degree /
