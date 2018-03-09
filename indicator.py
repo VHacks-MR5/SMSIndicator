@@ -1,10 +1,5 @@
 import string
 
-
-# text msg
-msg = "hello, my name is Mustafa Jamal, male and lives in @Egypt!!! 21 yrs"
-
-
 """
 Clear Punctuations
 @:param String
@@ -66,9 +61,12 @@ def gender(txt):
     return "Gender(s): " + genders
 
 
-
 def age(txt):
     return "Age(s): " + str([int(s) for s in txt.split() if s.isdigit()])
+
+
+# text msg
+msg = "hello, my name is Mustafa Jamal, male and lives in @Egypt!!! 21 yrs"
 
 # functions Testing
 print(noPunctuations(msg))
