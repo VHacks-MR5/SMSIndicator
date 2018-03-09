@@ -64,6 +64,8 @@ def gender(txt):
 
 """
 Returns the Age number as a string from text msg
+numbers up to 3 boxes only
+else it won't return that
 @:param String
 @:return numbers in it as List 
 """
@@ -72,7 +74,7 @@ def age(txt):
 
 
 # text msg
-msg = "hello, my name is Mustafa Jamal, male and lives in @Egypt!!! 21 yrs"
+msg = "hello, my name is Mustafa Jamal, male and lives in @Egypt!!! 21 yrs phone no. 123456789"
 
 # functions Testing
 print(noPunctuations(msg))
