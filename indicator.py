@@ -1,9 +1,8 @@
-import re
 import string
 
 
 # text msg
-msg = "hello, my name is Mustafa Jamal, mail and lives in @Egypt!!!"
+msg = "hello, my name is Mustafa Jamal, male and lives in @Egypt!!!"
 
 
 """
@@ -32,8 +31,6 @@ def isName(txt):
     return "name: " + name
 
 
-
-
 """
 This Function to check the countries in the msg
 @:param
@@ -53,8 +50,23 @@ def isCountry(txt):
     return "Country: " + countryFound
 
 
+"""
+@:param String
+@:return the Gender from the msg
+"""
+def gender(txt):
+    genders = ""
+    clearTxt = noPunctuations(txt)
+    lowerTxt = clearTxt.lower()
+    if "male" in lowerTxt:
+        genders += "Male"
+    if "female" in lowerTxt:
+        genders += "Female"
+
+    return "Gender(s): " + genders
 
 # functions Testing
 print(noPunctuations(msg))
 print(isName(msg))
 print(isCountry(msg))
+print(gender(msg))
