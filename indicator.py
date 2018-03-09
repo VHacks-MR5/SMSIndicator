@@ -3,7 +3,7 @@ import string
 
 
 # text msg
-msg = "hello, my name is Mustafa Jamal, mail and lives in Egypt"
+msg = "hello, my name is Mustafa Jamal, mail and lives in @Egypt!!!"
 
 
 """
@@ -31,7 +31,7 @@ def isName(txt):
             name += word + " "
     return "name: " + name
 
-print(isName(msg))
+
 
 
 """
@@ -41,7 +41,8 @@ This Function to check the countries in the msg
 """
 def isCountry(txt):
     countryFound = ""
-    txtList = txt.split()
+    noPunTxt = (noPunctuations(txt))
+    txtList = noPunTxt.split()
     with open("countries") as f:
         countryList = f.read().splitlines()
 
@@ -51,4 +52,9 @@ def isCountry(txt):
 
     return "Country: " + countryFound
 
+
+
+# functions Testing
+print(noPunctuations(msg))
+print(isName(msg))
 print(isCountry(msg))
