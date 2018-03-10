@@ -3,7 +3,7 @@
 > Indicates names, ages, gender, etc in SMS
 ----
 ### How It Work:
-The Msg get received from Twilio API and saved locally in a file named by the sender phone number (using phone number as it won't be duplicated with anther person unlike names) then SMS Indicator parse through the msg file and retrieve important information listed [here](#) and send it to Database linking it to person photo then start matching between photos and last names to show relatives potentially receive information about them.
+The Msg get received from **_Twilio_** API and saved locally in a file named by the sender phone number (using phone number as it won't be duplicated with anther person unlike names) then SMS Indicator parse through the msg file and retrieve important information listed [here](##) and send it to Database linking it to person photo then start matching between photos and last names to show relatives potentially receive information about them.
 
 # #
 * Indecator Detects:
