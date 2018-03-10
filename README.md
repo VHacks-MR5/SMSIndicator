@@ -32,7 +32,7 @@ now I've finished:
 - to get public interface to connect witih local flask app  [ngrok](https://ngrok.com/downloadi) 
 
 bug still need:
-   - Alphanumeric Sender IDs cannot be used with trial accounts. 
+   - Alphanumeric Sender IDs cannot be used with trial accounts.<span style="color:red">some *red* text</span>.
       + Can't activate it on my machine on trail version [*see sms section third sub*](https://support.twilio.com/hc/en-us/articles/223136107-How-does-Twilio-s-Free-Trial-work-)
    - update instead of printing the msg save it to file.
    - pass the msg file to indecator functions
