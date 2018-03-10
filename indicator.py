@@ -59,7 +59,7 @@ def gender(txt):
     if "female" in lowerTxt:
         genders += "Female"
 
-    return "Gender(s): " + genders
+    return "Gender: " + genders
 
 
 """
